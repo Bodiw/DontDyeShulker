@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "dds",
+  "version": "${version}",
+
+  "name": "Dont Dye Shulker!",
+  "description": "Shulkers are too cute, they just lack a bit of color!\nWith this mod you can dye your beautiful shulkers",
+  "authors": [
+    "Bodiw"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Bodiw",
+    "sources": "https://github.com/Bodiw/DontDyeShulker"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/dds/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.bodiw.dds.Dds"
+    ]
+  },
+  "mixins": [
+    "dds.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
