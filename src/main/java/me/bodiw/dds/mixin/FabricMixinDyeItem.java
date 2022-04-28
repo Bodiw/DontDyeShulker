@@ -30,8 +30,8 @@ public class FabricMixinDyeItem extends Item {
 	@Final
 	private DyeColor color;
 
-	@Inject(at = @At("HEAD"), method = "useOnEntity()V", cancellable = true)
-	private void useOnShulker(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand,
+	@Inject(at = @At("HEAD"), method = "useOnEntity", cancellable = true)
+	private void useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand,
 			CallbackInfoReturnable<ActionResult> cir) {
 		ShulkerEntity shulkerEntity;
 		if (entity instanceof ShulkerEntity && (shulkerEntity = (ShulkerEntity) entity).isAlive()
